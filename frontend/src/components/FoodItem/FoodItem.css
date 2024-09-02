@@ -3,8 +3,27 @@
   margin: auto;
   border-radius: 15px;
   box-shadow: 0px 0px 10px #00000015;
-  transition: 0.3s;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
   animation: fadeIn 1s;
+}
+
+.food-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 15px #00000030;
+}
+
+.food-item .add {
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.food-item:hover .add {
+  transform: scale(1.2);
 }
 
 .food-item-image {
@@ -67,6 +86,12 @@
   padding: 6px;
   border-radius: 50px;
   background-color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.food-item-counter:hover {
+  transform: scale(1.2); /* Escala la imagen a 1.2 veces su tamaño original */
 }
 
 .food-item-counter img {
